@@ -1,10 +1,13 @@
 Supereasy
     - consider num ctors for other numbers
-    - consider shortcuts: 0 * anything = 0, 1 * anything = anything, 0 ± anything = anything, anything / 1 = anything
+    - consider shortcuts: 0 * anything = 0, 1 * anything = anything, 0 ± anything = anything, anything / 1 = anything, 0^n=0 n∊ℕ﹥₀, 1^n = 1 n∊ℕ₀
 
 Easy
     - inspect mulmul without intermediate product: to be better only stack must employed (no Vec writes) => addition method split
     - make pow log effecient
+    - mulmul escape for 0 multiplier
 
 Medium
-    - array of usizes: reduces memory footprint by double (1001=9, 10011001 = 9,9)
+    - array of usizes: reduces memory footprint twice (1001=9, 1001 1001 = 9 9)
+
+! reflect to lite

@@ -369,6 +369,9 @@ fn mulmul(row1: &Vec<u8>, row2: &Vec<u8>, times: u16) -> PlacesRow {
 /// Computes product of `mpler` and `mcand`.
 fn product(mpler: u8, mcand: &Vec<u8>, product: &mut Vec<u8>) {
     let mut takeover = 0;
+    
+    // runs in vain for `mpler` = 0
+    //   🡺 inspect possibilities
     for &num in mcand {
         // each `prod` can be immediately added to intermediate sum
         //   🡺 inspect this option
